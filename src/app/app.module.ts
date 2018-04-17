@@ -7,6 +7,7 @@ import { app_routing } from './app.routes';
 // Services
 
 import { InfoService } from './services/info.service';
+import { PostService } from './services/post.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -31,7 +32,9 @@ import { HttpModule } from '@angular/http';
     HttpModule,
     app_routing
   ],
-  providers: [InfoService],
+  providers: [
+    InfoService,
+    PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
