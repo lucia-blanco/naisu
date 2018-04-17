@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Routes
+import { app_routing } from './app.routes';
 
+// Services
+
+import { InfoService } from './services/info.service';
+
+// Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { PostComponent } from './components/post/post.component';
-
-// Routes
-import { app_routing } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,7 @@ import { app_routing } from './app.routes';
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    PostComponent
+    PostComponent,
   ],
   imports: [
     BrowserModule,
