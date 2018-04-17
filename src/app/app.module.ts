@@ -31,7 +31,7 @@ import { HttpModule } from '@angular/http';
     HttpModule,
     app_routing
   ],
-  providers: [],
+  providers: [InfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
