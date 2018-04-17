@@ -1,12 +1,12 @@
 <section class="ae-container-fluid rk-main">
   <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
 
-    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+      <div *ngIf="_ps.posts.length > 0 && _ps.loading_posts == false" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
       <a [routerLink]="['/post']" class="rk-item ae-masonry__item">
-        <img src="" alt="">
+        <img src="{{ post.url }}" alt="{{ post.title }}">
         <div class="item-meta">
-          <h2>Titulo</h2>
-          <p>Categoria</p>
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.category }}</p>
         </div>
       </a>
     </div>
