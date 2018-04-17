@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { PostComponent } from './components/post/post.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PostComponent } from './components/post/post.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     app_routing
   ],
   providers: [],
