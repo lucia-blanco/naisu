@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { InfoService } from './services/info.service';
-import { PostService } from './services/post.service';
+import { TimelineService } from './services/timeline.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { PostService } from './services/post.service';
 })
 export class AppComponent {
   constructor( public _is: InfoService,
-                      _ps: PostService) {
+                      _ts: TimelineService) {
 
   }
 }

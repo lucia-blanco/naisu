@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
-import { PostService } from '../../services/post.service';
+import { TimelineService } from '../../services/timeline.service';
 
 @Component({
   selector: 'app-post',
@@ -10,14 +10,17 @@ import { PostService } from '../../services/post.service';
 })
 export class PostComponent {
 
+  post: any = undefined;
+  cod: string = undefined;
+
   constructor( private route: ActivatedRoute,
-                public _ps: PostService) {
+                public _ts: TimelineService) {
                   route.params.subscribe( parametros => {
-                 _ps.load_post( parametros['id'])
-                 .subscribe ( res => {
-                    this.cod = parametros['id'];
-                    this.post = res.json();
-                 });
-            });
+
+                    _ts.load_post( parametros['id']).subscribe ( res => {
+                        this.cod = parametros['id'];
+                        this.post = res.json();
+                    });
+                  });
           }
 }

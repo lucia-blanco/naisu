@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
 @Injectable()
-export class PostService {
+export class TimelineService {
 
-  posts: any[] = [];
-  loading_posts = true;
+  timeline: any[] = [];
+  loading_timeline = true;
   loading_post = true;
 
   constructor( private http: Http) {
-    this.load_posts();
+    this.load_timeline();
   }
 
   public load_post( cod: string) {
@@ -19,9 +19,9 @@ export class PostService {
     }, 800);
   }
 
-  public load_posts() {
+  public load_timeline() {
 
-    this.loading_posts = true;
+    this.loading_timeline = true;
 
     const promesa = new Promise(( resolve, reject ) => {
 
@@ -30,8 +30,8 @@ export class PostService {
           // console.log( res.json());
 
           setTimeout(() => {
-            this.loading_posts = false;
-            this.posts = res.json();
+            this.loading_timeline = false;
+            this.timeline = res.json();
             resolve();
           }, 800);
         });

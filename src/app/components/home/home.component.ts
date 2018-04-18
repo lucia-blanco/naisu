@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { PostService } from '../../services/Post.service';
+import { TimelineService } from '../../services/timeline.service';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +9,6 @@ import { PostService } from '../../services/Post.service';
 })
 export class HomeComponent {
 
-  constructor(public _ps: PostService) { }
+  constructor(public _ts: TimelineService) { }
 
 }

@@ -7,7 +7,7 @@ import { app_routing } from './app.routes';
 // Services
 
 import { InfoService } from './services/info.service';
-import { PostService } from './services/post.service';
+import { TimelineService } from './services/timeline.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -34,7 +34,7 @@ import { HttpModule } from '@angular/http';
   ],
   providers: [
     InfoService,
-    PostService],
+    TimelineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
