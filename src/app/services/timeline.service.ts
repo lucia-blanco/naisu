@@ -33,7 +33,7 @@ export class TimelineService {
             this.loading_timeline = false;
             this.timeline = res.json();
             resolve();
-          }, 800);
+          }, 1800);
         });
     });
 
