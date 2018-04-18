@@ -22,3 +22,28 @@
 svg path, svg rect{
   fill: silver;
 }
+
+#logo{
+  padding-left: 10%;
+}
+
+#name{
+  font-family: 'Josefin Slab';
+  text-decoration: none;
+  color: #424B54;
+}
+
+.rk-menu__link{
+  color: #9A8F97;
+  padding-top: 20px;
+  padding-bottom: 45px;
+
+}
+
+a,p,h2 {
+  font-family: 'Open Sans Condensed'
+}
+
+.rk-menu__link:hover{
+  color: #424B54;
+}
