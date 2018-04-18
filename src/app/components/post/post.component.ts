@@ -17,10 +17,10 @@ export class PostComponent {
                 public _ts: TimelineService) {
                   route.params.subscribe( parametros => {
 
-                    _ts.load_post( parametros['id']).subscribe ( res => {
-                        this.cod = parametros['id'];
-                        this.post = res.json();
-                    });
+                    // _ts.load_post( parametros['id']).subscribe ( res => {
+                    //     this.cod = parametros['id'];
+                    //     this.post = res.json();
+                    // });
                   });
           }
 }
