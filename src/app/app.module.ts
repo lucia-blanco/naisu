@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { PostComponent } from './components/post/post.component';
 import { HttpModule } from '@angular/http';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpModule } from '@angular/http';
     AboutComponent,
     HomeComponent,
     PostComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
